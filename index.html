@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wonder Co</title>
+
+  <!-- SEO TITLE -->
+  <title>Wonder Co – Creative Parent Company in Balbriggan</title>
+
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Wonder Co is a creative parent company based in Balbriggan, County Dublin. We build fun, imaginative youth-led businesses including Wrist of Wonders, a custom loom band bracelet brand." />
+
+  <!-- SEO KEYWORDS -->
+  <meta name="keywords" content="Wonder Co, WonderCo, Wonder Company, Balbriggan business, youth entrepreneurs Ireland, Wrist of Wonders parent company, creative company Dublin, handmade businesses Ireland" />
 
   <!-- FAVICON -->
-<link rel="icon" href="wonder-logo.png" type="image/png">
+  <link rel="icon" href="wonder-logo.png" type="image/png">
 
   <style>
     body {
@@ -46,7 +54,6 @@
       margin-top: 20px;
     }
 
-    /* BUSINESS CARD */
     .business-card {
       display: flex;
       align-items: center;
@@ -71,26 +78,6 @@
       border-radius: 15px;
     }
 
-    /* GALLERY */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .gallery img {
-      width: 250px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    /* TEAM */
     .team-list {
       list-style: none;
       padding: 0;
@@ -98,7 +85,6 @@
       line-height: 2;
     }
 
-    /* CONTACT FORM */
     form input, form textarea {
       width: 100%;
       padding: 12px;
@@ -124,7 +110,6 @@
       background: #ff4dc4;
     }
 
-    /* PAYMENT */
     .payment-section {
       text-align: center;
     }
@@ -151,12 +136,10 @@
       padding: 25px;
     }
 
-    /* ANIMATIONS */
     @keyframes float {
       50% { transform: translateY(-15px); }
     }
 
-    /* CUTSCENE LOADING */
     #cutscene {
       position: fixed;
       width: 100%;
@@ -181,7 +164,6 @@
     @keyframes fadeOut {
       to { opacity: 0; visibility: hidden; }
     }
-
   </style>
 </head>
 
@@ -189,32 +171,43 @@
 
 <!-- LOADING SCREEN -->
 <div id="cutscene">
-  <img src="wonder-logo.png">
+  <img src="wonder-logo.png" alt="Wonder Co Logo Loading">
 </div>
 
 <header>
-  <img src="wonder-logo.png">
+  <img src="wonder-logo.png" alt="Wonder Co Logo">
   <h1>Wonder Co.</h1>
-  <p>Dream Big. Achive Bigger.</p>
+  <p>Dream Big. Achieve Bigger.</p>
 </header>
 
-<section class="section"> <h2>About Wonder Co.</h2> <div class="card"> <p> Wonder Co. is a creative parent company run by four young entrepreneurs. We build fun, imaginative, and exciting businesses that bring ideas to life. </p> <p> From creative products to innovative projects, everything we create is powered by passion, teamwork, and big dreams. </p> </div> </section>
+<section class="section">
+  <h2>About Wonder Co.</h2>
+  <div class="card">
+    <p>
+      Wonder Co is a youth-led creative parent company based in 
+      <strong>Balbriggan, County Dublin, Ireland</strong>. We build fun, imaginative, and exciting 
+      small businesses powered by teamwork, passion, and big dreams.
+    </p>
+    <p>
+      Our mission is to create unique brands that inspire creativity — starting with our first 
+      child company, <strong>Wrist of Wonders</strong>, a colourful loom band bracelet business.
+    </p>
+  </div>
+</section>
 
-<!-- BUSINESSES -->
 <section class="section">
   <h2>Our Businesses</h2>
 
   <a href="https://lavin0503.github.io/WOW" class="business-card">
-    <img src="gold (2).png">
+    <img src="gold (2).png" alt="Wrist of Wonders Logo">
     <div>
       <h3>Wrist of Wonders</h3>
-      <p>Custom loom band bracelets – colourful and personalised.</p>
+      <p>Custom loom band bracelets — colourful, personalised, and handmade in Balbriggan.</p>
     </div>
   </a>
 
 </section>
 
-<!-- REVOLUT -->
 <section class="section payment-section">
   <h2>Pay with Revolut</h2>
 
@@ -226,9 +219,18 @@
   <div class="payment-display" id="paymentDisplay"></div>
 </section>
 
-<!-- 4. TEAM --> <section class="section"> <h2>Meet The Team</h2> <div class="card"> <ul class="team-list"> <li><strong>Saina</strong> – Founder, Creative Manager & Star Product Creator</li> <li><strong>Ovi</strong> – Founder,CMO,Star Advertiser & Product Creator</li> <li><strong>Lavin</strong> – CEO,CFO,CTO,Finance & Creative Head</li> <li><strong>Steve</strong> – CMO,Star Advertiser </li> </ul> </div> </section>
+<section class="section">
+  <h2>Meet The Team</h2>
+  <div class="card">
+    <ul class="team-list">
+      <li><strong>Saina</strong> – Founder, Creative Manager & Star Product Creator</li>
+      <li><strong>Ovi</strong> – Founder, CMO, Star Advertiser & Product Creator</li>
+      <li><strong>Lavin</strong> – CEO, CFO, CTO, Finance & Creative Head</li>
+      <li><strong>Steve</strong> – CMO, Star Advertiser</li>
+    </ul>
+  </div>
+</section>
 
-<!-- CONTACT -->
 <section class="section">
   <h2>Contact Us</h2>
 
@@ -243,23 +245,29 @@
       <textarea name="message" rows="5" placeholder="Message" required></textarea>
 
       <input type="hidden" name="_captcha" value="false">
-
-      <button type="submit">Send Message</button>
+              <button type="submit">Send Message</button>
     </form>
   </div>
 </section>
 
-<footer> <p><strong>Contact Us</strong></p> <p>Email: wristofwonders@gmail.com</p> <p>&copy; 2025-2026 Wonder Co. — Built with creativity ✨</p> </footer>
+<footer>
+  <p><strong>Wonder Co © 2025</strong></p>
+  <p>Based in Balbriggan, County Dublin, Ireland</p>
+  <p>Email: wristofwonders@gmail.com</p>
+</footer>
 
 <script>
-function showQR() {
-  document.getElementById("paymentDisplay").innerHTML =
-    '<img src="WhatsApp Image 2025-08-08 at 19.31.23_cb90c9bc.jpg">';
-}
+  function showQR() {
+    document.getElementById("paymentDisplay").innerHTML =
+      '<img src="WhatsApp Image 2025-08-08 at 19.31.23_cb90c9bc.jpg" alt="Revolut QR Code">';
+  }
 
-function payLink() {
-  window.open("https://revolut.me/lavinslj18","_blank");
-}
+  function payLink() {
+    window.open("https://revolut.me/lavinslj18", "_blank");
+  }
+
+  // Show QR by default
+  showQR();
 </script>
 
 </body>
